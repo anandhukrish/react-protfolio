@@ -14,7 +14,7 @@ export default function Home() {
         <NextChapter to="About" />
         <About />
         <NextChapter to="about" />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
         <Footer />
       </div>

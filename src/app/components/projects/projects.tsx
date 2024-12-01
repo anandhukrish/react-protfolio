@@ -12,8 +12,6 @@ const Projects = () => {
       <SectionHeading />
       <div className="pt-20">
         <ProjectCard />
-        <ProjectCard />
-        <ProjectCard />
       </div>
       <div className="grid md:grid-cols-5 lg:grid-cols-3 gap-5 mx-auto">
         <Card className=" bg-transparent border-black mt-10 p-5 col-span-1 md:col-span-2 lg:col-span-1 relative h-[320px] overflow-hidden">

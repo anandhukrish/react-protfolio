@@ -1,26 +1,28 @@
-import { AlignJustify, Mail } from "lucide-react";
+"use client";
 import React from "react";
-import { Button } from "../ui/button";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 const Header = () => {
+  const pathname = window.location.href;
+  console.log(pathname);
+
   return (
-    <nav className="flex container mx-auto items-center justify-between py-5">
-      <div>
-        <span className="text-2xl font-bold ">Ananthu Krishnan</span>
-      </div>
-      <div>
-        <div className="flex items-center gap-6">
-          <div className="flex items-center gap-2">
-            <Mail />
-            <a href="mailto:ananthukrish.k@gmail.con">
-              ananthukrish.k@gmail.com
-            </a>
-          </div>
-          <Button variant="outline" className="rounded-full p-4 size-15">
-            <AlignJustify />
-          </Button>
-        </div>
-      </div>
+    <nav className="flex container mx-auto items-center justify-center py-5">
+      <ul className="flex p-0.5 gap-2 border border-black/45 rounded-full">
+        <li className="px-4 py-1 rounded-full hover:bg-black/20">
+          <Link href="/">Home</Link>
+        </li>
+        <li className="px-4 py-1 rounded-full hover:bg-black/20">
+          <Link href="#about">About</Link>
+        </li>
+        <li className="px-4 py-1 rounded-full hover:bg-black/20">
+          <Link href="#project">Project</Link>
+        </li>
+        <li className="px-4 py-1 rounded-full hover:bg-black/20">
+          <Link href="#contact">Contact</Link>
+        </li>
+      </ul>
     </nav>
   );
 };

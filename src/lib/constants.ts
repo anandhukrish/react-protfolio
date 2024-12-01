@@ -8,7 +8,7 @@ export const skills = [
     title: "CSS3",
   },
   {
-    img: "/skills/javascript.svg",
+    img: "/skills/js.svg",
     title: "JavaScript",
   },
   {
@@ -84,11 +84,11 @@ export const skills = [
     title: "Express.js",
   },
   {
-    img: "/skills/nodejs.svg",
+    img: "/skills/node-js.svg",
     title: "Node.js",
   },
   {
-    img: "/skills/mongodb.svg",
+    img: "/skills/mongo.svg",
     title: "MongoDB",
   },
 ];

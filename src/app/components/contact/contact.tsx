@@ -5,12 +5,12 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <Card className="bg-transparent px-5  py-8 mt-16 border-black flex items-center justify-between">
+    <Card className="bg-transparent px-5  py-8 mt-16 border-black flex items-center justify-between flex-col md:flex-row text-center md:text-start gap-8 md:gap-5">
       <div>
-        <h1 className="text-xl md:text-3xl font-extrabold">
+        <h1 className="text-xl md:text-2xl lg:text-3xl font-extrabold mb-3">
           {`Let's create something amazing togethre!`}
         </h1>
-        <p>
+        <p className=" text-sm md:text-base">
           {`Ready to bring your next project to life? Let's connect and discuss how
         can I help you achive your goals`}
         </p>
