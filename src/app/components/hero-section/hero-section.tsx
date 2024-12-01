@@ -26,6 +26,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               className=" rounded-full text-sm sm:text-base md:text-lg font-semibold py-4 sm:py-6 px-5 sm:px-7 lg:px-10 bg-transparent border-black hover:bg-black hover:text-white"
+              asChild
             >
               <Link href="#Contact">Contact Me</Link>
             </Button>

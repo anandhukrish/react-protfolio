@@ -10,17 +10,37 @@ const Header = () => {
   return (
     <nav className="flex container mx-auto items-center justify-center py-5">
       <ul className="flex p-0.5 gap-2 border border-black/45 rounded-full">
-        <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="/">Home</Link>
+        <li>
+          <Link
+            className="px-4 py-1 inline-block rounded-full cursor-pointer hover:bg-black/20"
+            href="/"
+          >
+            Home
+          </Link>
         </li>
-        <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#About">About</Link>
+        <li>
+          <Link
+            className="px-4 py-1 inline-block rounded-full cursor-pointer hover:bg-black/20"
+            href="#About"
+          >
+            About
+          </Link>
         </li>
-        <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#Project">Project</Link>
+        <li>
+          <Link
+            className="px-4 py-1 inline-block rounded-full cursor-pointer hover:bg-black/20"
+            href="#Project"
+          >
+            Project
+          </Link>
         </li>
-        <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#Contact">Contact</Link>
+        <li>
+          <Link
+            className="px-4 py-1 inline-block rounded-full cursor-pointer hover:bg-black/20"
+            href="#Contact"
+          >
+            Contact
+          </Link>
         </li>
       </ul>
     </nav>

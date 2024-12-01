@@ -13,7 +13,7 @@ export default function Home() {
         <HeroSection />
         <NextChapter to="About" />
         <About />
-        <NextChapter to="about" />
+        <NextChapter to="Project" />
         <Projects />
         <Contact />
         <Footer />
