@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="pt-[100px]">
+    <div className="pt-[40px]">
       <Separator className="bg-black/30 mb-4" />
       <div className="flex items-center justify-between flex-col md:flex-row">
         <p className="text-sm md:text-base">

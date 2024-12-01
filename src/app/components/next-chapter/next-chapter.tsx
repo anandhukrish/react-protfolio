@@ -5,7 +5,7 @@ import React from "react";
 const NextChapter = ({ to }: { to: string }) => {
   return (
     <Link
-      className="flex items-center justify-center md:justify-start gap-4 pt-[100px] md:pt-14"
+      className="flex items-center justify-center md:justify-start gap-4 pt-[80px] md:pt-14"
       href={`#${to}`}
     >
       <span className="text-gray-500">01/10</span>

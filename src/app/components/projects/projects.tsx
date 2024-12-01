@@ -8,13 +8,17 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <section id="Projects" className="pt-[120px]">
-      <SectionHeading />
-      <div className="pt-20">
+    <section id="Project" className="pt-[40px] md:pt-[80px]">
+      <SectionHeading
+        overlayText="PROJECTS"
+        heading="Some of my most recent projects"
+        desc="My Featured Projects"
+      />
+      <div className="pt-8 md:pt-20">
         <ProjectCard />
       </div>
-      <div className="grid md:grid-cols-5 lg:grid-cols-3 gap-5 mx-auto">
-        <Card className=" bg-transparent border-black mt-10 p-5 col-span-1 md:col-span-2 lg:col-span-1 relative h-[320px] overflow-hidden">
+      <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-3 gap-5 mx-auto">
+        <Card className=" bg-transparent border-black mt-4 md:mt-10 p-5 col-span-1 md:col-span-2 lg:col-span-1 relative h-[320px] overflow-hidden">
           <CardTitle className="text-2xl md:text-4xl mb-3">My Reads</CardTitle>
           <p className="mb-3 text-sm lg:text-base max-w-xs">
             Explore the books shaping my prespectives
@@ -27,7 +31,7 @@ const Projects = () => {
             width={40}
           />
         </Card>
-        <Card className=" bg-transparent  border-black mt-10 p-5 col-span-1 md:col-span-3 lg:col-span-2">
+        <Card className=" bg-transparent  border-black mt-4 md:mt-10 p-5 col-span-1 md:col-span-3 lg:col-span-2">
           <CardTitle className="text-2xl md:text-4xl mb-3">
             My Toolbox
           </CardTitle>
@@ -45,11 +49,13 @@ const Projects = () => {
                 <Image
                   src={skill.img ? skill.img : ""}
                   alt=""
-                  className="size-10 object-contain"
+                  className="size-9 md:size-10 object-contain"
                   width={40}
                   height={40}
                 />
-                <span className="font-medium text-xl">{skill.title} </span>
+                <span className="font-medium text-base md:text-xl">
+                  {skill.title}{" "}
+                </span>
               </div>
             ))}
           </Marquee>
@@ -62,11 +68,13 @@ const Projects = () => {
                 <Image
                   src={skill.img ? skill.img : ""}
                   alt=""
-                  className="size-10 object-contain"
+                  className=" size-9 md:size-10 object-contain"
                   width={40}
                   height={40}
                 />
-                <span className="font-medium text-xl">{skill.title} </span>
+                <span className="font-medium text-base md:text-xl">
+                  {skill.title}{" "}
+                </span>
               </div>
             ))}
           </Marquee>

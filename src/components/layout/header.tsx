@@ -14,13 +14,13 @@ const Header = () => {
           <Link href="/">Home</Link>
         </li>
         <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#about">About</Link>
+          <Link href="#About">About</Link>
         </li>
         <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#project">Project</Link>
+          <Link href="#Project">Project</Link>
         </li>
         <li className="px-4 py-1 rounded-full hover:bg-black/20">
-          <Link href="#contact">Contact</Link>
+          <Link href="#Contact">Contact</Link>
         </li>
       </ul>
     </nav>

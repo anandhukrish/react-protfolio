@@ -3,34 +3,41 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="pt-[100px] md:pt-[130px]" id="About">
-      <SectionHeading />
-      <div className="flex gap-5 items-center flex-col md:flex-row text-center">
+    <section className="pt-[80px] md:pt-[80px]" id="About">
+      <SectionHeading
+        overlayText="ABOUT ME"
+        heading="Some Word About me"
+        desc="know me more"
+      />
+      <div className="flex gap-5 items-center flex-col md:flex-row text-center md:text-left">
         <div className="basis-full md:basis-[70%] md:pr-8">
           <div>
             <h1 className=" text-xl lg:text-2xl font-bold mb-5">
-              I'm Emily Davis, a Web Developer
+              I'm Ananthu Krishnan, a Web Developer
             </h1>
             <p className=" text-lg lg:text-xl mb-5">
-              I'm a designer & developer with a passion for web design. I enjoy
+              I'm a developer with a passion for web development. I enjoy
               developing simple, clean and slick websites that provide real
-              value to the end user. Thousands of clients have procured
-              exceptional results while working with me. Delivering work within
-              time and budget which meets client's requirements is our moto.
+              value to the end user.
             </p>
           </div>
           <div className="flex justify-between text-lg lg:text-xl">
             <div>
-              <div className="font-bold">Emial:</div>
-              <div>a@gmail.con</div>
+              <div>Email:</div>
+              <a
+                href="mailto:ananthukrish.k@gmail.com"
+                className="text-sm md:text-base"
+              >
+                ananthukrish.k@gmail.con
+              </a>
             </div>
             <div>
-              <div className="font-bold">Emial:</div>
-              <div>a@gmail.con</div>
+              <div>Date of Birth:</div>
+              <div className="text-sm md:text-base">04 February, 1998</div>
             </div>
             <div>
-              <div className="font-bold">Emial:</div>
-              <div>a@gmail.con</div>
+              {/* <div className="font-bold">Emial:</div>
+              <div>a@gmail.con</div> */}
             </div>
           </div>
         </div>
